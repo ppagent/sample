@@ -1,6 +1,6 @@
 {
     "name": "@ppagent/plugin-sample",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "ppagent sample",
     "types": "dist/plugin.d.ts",
     "main": "dist/plugin.js",
@@ -8,15 +8,15 @@
     "scripts": {
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "check:types": "tsc --noEmit",
         "build": "esbuild \"src/**/*.ts\" --platform=node --outdir=build --resolve-extensions=.js --out-extension:.js=.js --format=esm",
         "build:docker": "docker build . -t @ppagent/sample --build-arg APP_ENV=production --progress=plain",
         "start": "node build",
+        "tsx": "cross-env NODE_ENV=development tsx src/index.ts",
         "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
         "build:plugin": "node build.plugin.js",
         "test": "vitest",
         "test:watch": "vitest -w",
-        "publish": "pnpm publish --registry=https://registry.npmjs.org/ "
+        "publish": "pnpm publish"
     },
     "repository": {
         "type": "git",
@@ -33,6 +33,7 @@
         "node": ">=20"
     },
     "keywords": [
+        "ppagent",
         "chat",
         "wechat",
         "chatbot"
