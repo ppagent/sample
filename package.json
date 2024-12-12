@@ -17,8 +17,7 @@
         "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
         "build:plugin": "node build.plugin.js",
         "test": "vitest",
-        "test:watch": "vitest -w",
-        "publish": "pnpm publish"
+        "test:watch": "vitest -w"
     },
     "repository": {
         "type": "git",
