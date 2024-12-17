@@ -1,6 +1,6 @@
 {
     "name": "@ppagent/plugin-sample",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "ppagent sample",
     "types": "dist/plugin.d.ts",
     "main": "dist/plugin.js",
