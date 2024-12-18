@@ -7,7 +7,7 @@ const plugin: IPPAgentPlugin = (app, options) => {
         logger.info(options.demo);
     }
     return {
-        name: "sample-plugin",
+        name: "@ppagent/plugin-sample",
         desc: "一个示例插件",
         needOnline: false,
         schema: {
