@@ -34,7 +34,7 @@ const onRestart = async (chater: PPAgent) => {
     await chater.stop();
     setTimeout(async () => {
         logger.warn("old instance stopped,start new instance...");
-        chater.globalEvent.emit(GlobalEventNames.APP_RESTART);
+        chater.globalEvent.emit(GlobalEventNames.APP_RESTARTED);
         chater.off("restart", onRestart);
         chater = await starter();
         logger.warn("new instance started");

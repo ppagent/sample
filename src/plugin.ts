@@ -2,7 +2,7 @@ import { getLogger, IPPAgentPlugin } from "ppagent";
 
 const logger = getLogger("sample-plugin");
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const plugin: IPPAgentPlugin = (app, options) => {
+const plugin: IPPAgentPlugin =async (app, options) => {
     if (options.demo) {
         logger.info(options.demo);
     }
