@@ -1,5 +1,6 @@
-import { apiPlugin, cogViewPlugin, config, defaultPlugin, getLogger, GlobalEventNames, PPAgent } from "ppagent";
+import { apiPlugin, config, defaultPlugin, getLogger, GlobalEventNames, PPAgent } from "ppagent";
 import samplePlugin from "./plugin.js";
+import { randomUUID } from "node:crypto";
 
 const logger = getLogger("app");
 
@@ -22,7 +23,6 @@ const starter = async () => {
     });
     chat.use(defaultPlugin);
     chat.use(apiPlugin);
-    chat.use(cogViewPlugin);
     chat.use(samplePlugin);
     await chat.start();
     logger.debug("app started");
@@ -34,7 +34,7 @@ const onRestart = async (chater: PPAgent) => {
     await chater.stop();
     setTimeout(async () => {
         logger.warn("old instance stopped,start new instance...");
-        chater.globalEvent.emit(GlobalEventNames.APP_RESTARTED);
+        chater.globalEvent.emit(GlobalEventNames.APP_RESTARTED, { title: "应用重启", id: randomUUID() });
         chater.off("restart", onRestart);
         chater = await starter();
         logger.warn("new instance started");

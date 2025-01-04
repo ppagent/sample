@@ -1,10 +1,10 @@
 {
     "name": "@ppagent/plugin-sample",
     "version": "0.0.6",
-    "description": "ppagent sample-请修改",
+    "description": "ppagent sample",
     "types": "dist/plugin.d.ts",
     "main": "dist/plugin.js",
-    "displayName": "PP智能体示例插件-请修改",
+    "displayName": "PP智能体示例插件",
     "type": "module",
     "author": "ppagent",
     "scripts": {
