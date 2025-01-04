@@ -1,10 +1,10 @@
 {
     "name": "@ppagent/plugin-sample",
-    "version": "0.0.5",
-    "description": "ppagent sample",
+    "version": "0.0.6",
+    "description": "ppagent sample-请修改",
     "types": "dist/plugin.d.ts",
     "main": "dist/plugin.js",
-    "displayName": "PP智能体示例插件",
+    "displayName": "PP智能体示例插件-请修改",
     "type": "module",
     "author": "ppagent",
     "scripts": {
@@ -49,7 +49,7 @@
         "dotenv": "^16.4.5"
     },
     "peerDependencies": {
-        "ppagent": "^0.0.3",
+        "ppagent": "latest",
         "emittery": "^1.0.3"
     },
     "devDependencies": {

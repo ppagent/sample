@@ -3,7 +3,9 @@
         "target": "ESNext",
         "module": "ESNext",
         "moduleResolution": "node",
-        "lib": ["esnext"],
+        "lib": [
+            "esnext"
+        ],
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "allowJs": true,
@@ -16,8 +18,16 @@
         "resolveJsonModule": true,
         "declaration": true,
         "declarationDir": "dist",
-        "emitDeclarationOnly": true
+        "emitDeclarationOnly": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules"]
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "dist"
+    ]
 }
