@@ -25,3 +25,6 @@ deno.lock
 /dist/
 /config/.env.development
 /config/.env.production
+/data
+ds.json
+*.db
