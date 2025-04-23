@@ -1,0 +1,12 @@
+version: "3"
+services:
+    ppagent:
+        image: docker.1ms.run/ppagent/ppagent:latest
+        container_name: ppagent
+        restart: unless-stopped
+        ports:
+            - "5050:5050"
+        volumes:
+            - ./config:/app/config
+            - ./data:/app/data
+            - ./public:/app/public
