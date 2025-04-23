@@ -8,7 +8,7 @@
 
 # misc
 .DS_Store
-.env.production
+.env
 
 # debug
 npm-debug.log*
@@ -16,15 +16,12 @@ npm-debug.log*
 .nyc_output
 coverage
 
-production.env
 
 package-lock.json
 pnpm-lock.yaml
 /public/temp/
 deno.lock
 /dist/
-/config/.env.development
-/config/.env.production
 /data
 ds.json
 *.db

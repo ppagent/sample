@@ -1,6 +1,5 @@
 ./public/temp/
 ./node_modules/
-./config/.env.development
 ./config/*.pem
 .gitignore
 .vscode/
