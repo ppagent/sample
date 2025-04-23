@@ -1,6 +1,6 @@
 {
     "name": "@ppagent/plugin-sample",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "ppagent sample",
     "types": "dist/plugin.d.ts",
     "main": "dist/plugin.js",
@@ -45,7 +45,6 @@
     },
     "homepage": "https://github.com/ppagent/ppagent",
     "dependencies": {
-        "cross-env": "^7.0.3",
         "dotenv": "^16.4.5"
     },
     "peerDependencies": {
@@ -53,6 +52,7 @@
         "emittery": "^1.0.3"
     },
     "devDependencies": {
+        "cross-env": "^7.0.3",
         "@eslint/js": "^9.9.1",
         "@types/eslint__js": "^8.42.3",
         "@types/node": "^22.5.1",
